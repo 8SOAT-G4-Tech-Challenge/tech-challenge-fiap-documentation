@@ -100,6 +100,15 @@ Para executar a aplicação siga a seguinte [documentação](docs/FASE-3.md), qu
 
 </details>
 
+<details>
+	<summary>
+		<i><b>FASE 04 - Microsserviços e Testes</b></i>
+	</summary>
+
+### Em andamento
+
+</details>
+
 ### Participantes do Projeto
 
 - Amanda Maschio - RM 357734
