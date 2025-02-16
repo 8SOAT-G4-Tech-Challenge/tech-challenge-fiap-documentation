@@ -1,4 +1,4 @@
-## Como realizar o deploy da Aplicação
+## Como realizar o deploy da Aplicação (Fase 2)
 
 ### Pré-requisitos
 

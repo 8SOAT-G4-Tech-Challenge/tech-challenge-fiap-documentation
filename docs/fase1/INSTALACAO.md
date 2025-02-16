@@ -1,4 +1,4 @@
-## Como Iniciar a Aplicação
+## Como Iniciar a Aplicação (Fase 1)
 
 ### Pré-requisitos
 
