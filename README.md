@@ -90,7 +90,7 @@ Para executar o deploy local da aplicação com Kubernetes da fase 2, siga a seg
 - Terraform
 
 #### Resumo
-Na Fase 3, o projeto evoluiu com a implementação de práticas avançadas de CI/CD e a segregação do código em múltiplos repositórios, garantindo maior modularidade. Todos os repositórios realizam deploy automatizado na AWS utilizando GitHub Actions, com as branches main/master protegidas para que os commits sejam realizados apenas via pull request
+Na Fase 3, o projeto evoluiu com a implementação de práticas avançadas de CI/CD e a segregação do código em múltiplos repositórios, garantindo maior modularidade. Todos os repositórios realizam deploy automatizado na AWS utilizando GitHub Actions, com as branches master protegidas para que os commits sejam realizados apenas via pull request
 
 Os repositórios são:
 
@@ -135,9 +135,11 @@ Na Fase 4, o projeto evoluiu para um modelo de microsserviços, quebrando o mono
 
 Os microsserviços comunicam-se entre si por meio de chamadas HTTP e contam com testes unitários que asseguram uma cobertura superior a 80%. Além disso, os pull requests para a branch principal (master) validam o build da aplicação e a qualidade do código, utilizando o SonarQube, com um mínimo de 70% de cobertura.
 
-Para maiores detalhes de como a aplicação funcionará nessa fase, acesse o [Vídeo de Apresentação da Fase 4]().
+Para maiores detalhes de como a aplicação funcionará nessa fase, acesse o [Vídeo de Apresentação da Fase 4]() (To Do).
 
 #### Infraestrutura de Cloud
+
+To Do
 
 #### Evidência de Cobertura de Testes
 
