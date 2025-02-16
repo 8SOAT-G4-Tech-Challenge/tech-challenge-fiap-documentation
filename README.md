@@ -119,7 +119,31 @@ Para executar a aplicação da fase 3, siga a seguinte [documentação](docs/fas
 		<b>FASE 04 - Microsserviços e Qualidade de Software</b>
 	</summary>
 
-Em andamento
+#### Requerimentos
+
+- Node 20
+- Kubernetes / KubeCTL
+- AWS CLI
+- Terraform
+
+#### Resumo
+Na Fase 4, o projeto evoluiu para um modelo de microsserviços, quebrando o monolito em três serviços distintos:
+
+- **Pedidos**: Gerenciamento de pedidos. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-order) para acessar.
+- **Pagamentos**: Processamento de pagamentos. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-payment) para acessar.
+- **Usuários**: Administração de usuários e clientes. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-user) para acessar.
+
+Os microsserviços comunicam-se entre si por meio de chamadas HTTP e contam com testes unitários que asseguram uma cobertura superior a 80%. Além disso, os pull requests para a branch principal (master) validam o build da aplicação e a qualidade do código, utilizando o SonarQube, com um mínimo de 70% de cobertura.
+
+Para maiores detalhes de como a aplicação funcionará nessa fase, acesse o [Vídeo de Apresentação da Fase 4]().
+
+#### Infraestrutura de Cloud
+
+#### Evidência de Cobertura de Testes
+
+Abaixo é possível visualizar captura de tela de evidência de testes e qualidade dos 3 microsserviços no SonarQube
+
+![Evidência de Cobertura de Testes](https://github.com/user-attachments/assets/ab0027f6-e4f4-4d43-b4e0-8b79d6e15743)
 
 </details>
 
