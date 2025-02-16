@@ -16,7 +16,7 @@ npm run dev
 
 ### Swagger
 
-- `http://localhost:3000/docs`
+- `http://localhost:{porta}/docs`
 
 ### ESLint
 
@@ -29,7 +29,7 @@ npm run dev
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true,
 	},
-  "eslint.format.enable": true,
+        "eslint.format.enable": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
@@ -62,19 +62,6 @@ npm run dev
 docker-compose up -d --build
 ```
 
-### Conexão com PGAdmin ou qualquer outra ferramenta de administração de banco de dados
-
-- Observação: É possível realizar a visualização das tabelas utilizando o Prisma Studio, passo abaixo.
-
-- Registrar um novo servidor
-- Escolha um nome para seu servidor (livre escolha)
-- No menu conexões adicionar as seguintes configurações, conforme docker-compose:
-- Host name/address: localhost
-- Port: 5432
-- Maintenance database: tech-challenger
-- Username: postgres
-- Password: docker
-
 ### ORM Prisma
 
 - Documentação:
@@ -88,7 +75,7 @@ docker-compose up -d --build
 npm prisma studio
 ```
 
-- Para rodar as migrations:
+- Para rodar as migrations (no caso do PostgreSQL ou qualquer outro banco relacional):
 
 ```sh
 npm prisma migrate dev
