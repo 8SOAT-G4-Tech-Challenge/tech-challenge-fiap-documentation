@@ -152,6 +152,17 @@ Abaixo é possível visualizar captura de tela de evidência de testes e qualida
 
 ![Evidência de Cobertura de Testes](https://github.com/user-attachments/assets/ab0027f6-e4f4-4d43-b4e0-8b79d6e15743)
 
+#### Evidência de Testes BDD
+
+Abaixo é possível visualizar a evidência de testes BDD no microserviço de user
+
+##### User
+![WhatsApp Image 2025-02-16 at 6 56 11 PM](https://github.com/user-attachments/assets/f7c4f9f3-620e-436b-8f0d-efc6f2c3e8a5)
+
+##### Customer
+![WhatsApp Image 2025-02-16 at 6 56 11 PM (1)](https://github.com/user-attachments/assets/ae1380fe-0358-41f0-abbe-058f4c88ac41)
+
+
 </details>
 
 ### Participantes
