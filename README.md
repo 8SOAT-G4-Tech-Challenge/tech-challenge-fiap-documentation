@@ -17,6 +17,15 @@ Este projeto visa oferecer um sistema integrado de controle de pedidos para uma 
 - **MongoDB**: Banco de Dados não relacional orientado a documentos
 - **Redis**: Banco de Dados em memória para caching e otimização do desempenho.
 
+### Repositórios do Projeto
+- **[tech-challenge-user](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-user)**: Microsserviço de Gerenciamento de Usuários e Clientes
+- **[tech-challenge-payment](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-payment)**: Microsserviço de Pagamentos de Pedidos
+- **[tech-challenge-order](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-order)**: Microsserviço de Gerenciamento de Pedidos
+- **[tech-challenge-terraform](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-terraform)**: Repositório para infraestrutura Kubernetes com Terraform
+- **[tech-challenge-database](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-database)**: Repositório para infraestrutura de Banco de Dados com Terraform
+- **[tech-challenge-lambdas](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-lambdas)**: Repositório para as funções lambda
+- **[tech-challenge-bruno](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-bruno)**: Repositório com as API Collections do projeto
+
 ### Fases
 Abaixo estão detalhadas todas as fases do projeto, evidenciando sua evolução ao longo do tempo:
 
@@ -36,7 +45,7 @@ Na Fase 1, foi desenvolvida uma aplicação monolítica estruturada em uma arqui
 
 #### Documentação
 
-O projeto possui uma documentação completa, desenvolvida utilizando os conceitos de DDD, linguagem ubíqua e Event Storming, abrangendo os fluxos de realização do pedido, pagamento, preparação e entrega. Acesse [aqui](https://miro.com/app/board/uXjVK2WZuMs=/) a Documentação do Projeto. Também é possível visualizar a estrutura do banco de dados, acessando o [Diagrama ER](https://miro.com/app/board/uXjVK0gj0bg=/).
+O projeto possui uma documentação completa, desenvolvida utilizando os conceitos de DDD, linguagem ubíqua e Event Storming, abrangendo os fluxos de realização do pedido, pagamento, preparação e entrega. Acesse a [Documentação do Projeto](https://miro.com/app/board/uXjVK2WZuMs=/). Também é possível visualizar a estrutura do banco de dados, acessando o [Diagrama ER](https://miro.com/app/board/uXjVK0gj0bg=/).
 
 #### Execução
 
@@ -61,7 +70,7 @@ Na Fase 2, o projeto foi evoluído adotando os princípios de Clean Code e Clean
 
 #### Documentação
 
-É possível visualizar e testar todos os endpoints [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-bruno). Foi utilizada a API Client Bruno, uma alternativa ao Postman que permite que a documentação seja versionada através do GitHub.
+É possível visualizar e testar todos os endpoints através do repositório [tech-challenge-bruno](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-bruno). Foi utilizada a API Client Bruno, uma alternativa ao Postman que permite que a documentação seja versionada através do GitHub.
 
 #### Deploy
 
@@ -92,19 +101,15 @@ Para executar o deploy local da aplicação com Kubernetes da fase 2, siga a seg
 #### Resumo
 Na Fase 3, o projeto evoluiu com a implementação de práticas avançadas de CI/CD e a segregação do código em múltiplos repositórios, garantindo maior modularidade. Todos os repositórios realizam deploy automatizado na AWS utilizando GitHub Actions, com as branches master protegidas para que os commits sejam realizados apenas via pull request
 
-Os repositórios são:
+Os novos repositórios são:
 
-- **Repositório AWS Lambdas**: com funções lambda para autenticar clientes via CPF e usuários administradores. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-lambdas) para acessar.
-- **Repositório para infraestrutura Kubernetes com Terraform**: contém todo o mapeamento para a criação de todos os recursos de infraestrutura na AWS. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-terraform) para acessar.
-- **Repositório para infraestrutura de Banco de Dados com Terraform**: contém todo o mapeamento para a criação de todos os recursos de banco de dados, VPC e network e security group na AWS. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-database) para acessar.
-- **Repositório da Aplicação**: mantido o repositório da API executada no Kubernetes.
-- **Repositório Bruno**: mantido o repositório que contém a documentação da API.
+- **tech-challenge-lambdas**: com funções lambda para autenticar clientes via CPF e usuários administradores.
+- **tech-challenge-terraform**: contém todo o mapeamento para a criação de todos os recursos de infraestrutura na AWS.
+- **tech-challenge-database**: contém todo o mapeamento para a criação de todos os recursos de banco de dados, VPC e network, e security group na AWS.
 
 Para maiores detalhes de como a aplicação funcionará nessa fase, acesse o [Vídeo de Apresentação da Fase 3](https://www.youtube.com/watch?v=cCr7wOE1I6Y).
 
 #### Infraestrutura de Cloud
-
-[Desenho Arquitetura drawio](https://drive.google.com/file/d/1y7T1N6wRgpz-XEwMXWtzjVsCxz71yy1p/view?usp=sharing)
 
 ![Desenho Arquitetura drawio](https://github.com/user-attachments/assets/0f953ddc-52e4-4467-b566-e5f984addd6f)
 
@@ -127,11 +132,11 @@ Para executar a aplicação da fase 3, siga a seguinte [documentação](docs/fas
 - Terraform
 
 #### Resumo
-Na Fase 4, o projeto evoluiu para um modelo de microsserviços, quebrando o monolito em três serviços distintos:
+Na Fase 4, o projeto evoluiu para um modelo de microsserviços, quebrando o monolito em 3 serviços distintos:
 
-- **Pedidos**: Gerenciamento de pedidos. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-order) para acessar.
-- **Pagamentos**: Processamento de pagamentos. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-payment) para acessar.
-- **Usuários**: Administração de usuários e clientes. Clique [aqui](https://github.com/8SOAT-G4-Tech-Challenge/tech-challenge-user) para acessar.
+- **tech-challenge-order**: Gerenciamento de pedidos
+- **tech-challenge-payment**: Processamento de pagamentos
+- **tech-challenge-user**: Administração de usuários e clientes
 
 Os microsserviços comunicam-se entre si por meio de chamadas HTTP e contam com testes unitários que asseguram uma cobertura superior a 80%. Além disso, os pull requests para a branch principal (master) validam o build da aplicação e a qualidade do código, utilizando o SonarQube, com um mínimo de 70% de cobertura.
 
@@ -139,7 +144,7 @@ Para maiores detalhes de como a aplicação funcionará nessa fase, acesse o [V�
 
 #### Infraestrutura de Cloud
 
-To Do
+![Desenho Arquitetura drawio](https://github.com/user-attachments/assets/20616efa-0ad9-4f2a-a973-f1cc11189e34)
 
 #### Evidência de Cobertura de Testes
 
